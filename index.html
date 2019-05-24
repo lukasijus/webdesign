@@ -21,19 +21,30 @@
     }
     
   .carousel-inner img {
-      width: 100%; /* Set width to 100% */
-      margin: auto;
+      max-width: 100%; 
+      margin:auto;
       min-height:200px;
-      max-height: 500px;
-      object-fit: contain;
+      max-height: auto;
+      /* object-fit:scale-down; */
   }
 
+  .img-responsive {
+    max-height: 200px;
+    max-width: 200px;
+  }
   /* Hide the carousel text when the screen is less than 600 pixels wide */
-  @media (max-width: 600px) {
+  @media (max-width: 768px) {
     .carousel-caption {
       display: none; 
     }
+    .col-sm-4{
+      max-width: 300px;
+      margin: auto;
+    }
+
   }
+
+  
   </style>
 </head>
 <body>
@@ -73,7 +84,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
       <div class="item active">
-        <img src="images/Web design resize.jpg" alt="Image">
+        <img src="images/Web design.jpg" alt="Image">
         <div class="carousel-caption">
           <h3>WEB DESIGN</h3>
           <p>Using all the latest tools and frameworks to make website secure and robust</p>
@@ -81,7 +92,7 @@
       </div>
 
       <div class="item">
-        <img src="images/Content creation resize.jpg" alt="Image">
+        <img src="images/Content creation.jpg" alt="Image">
         <div class="carousel-caption">
           <h3>CONTENT CREATION</h3>
           <p>Beutiful responsive templates using bootstrap and wordpress  </p>
@@ -89,7 +100,7 @@
       </div>
 
       <div class="item">
-          <img src="images/Buisness value resize.jpg" alt="Image">
+          <img src="images/Buisness value.jpg" alt="Image">
           <div class="carousel-caption">
             <h3>SEO</h3>
             <p>Make your brand to be recognized by millions</p>
@@ -113,13 +124,19 @@
   <h3>My Stack</h3><br>
   <div class="row">
     <div class="col-sm-4">
-      <img src="images/img_js.png" class="img-responsive" style="width:100%" alt="Image">
-      <p>Developing Reusable JavaScript components</p>
+      <img src="images/HTML.png" class="img-responsive" style="margin: auto" alt="Image">
+      <p>Making sure it's easy and simple to navigate on website</p>
     </div>
     <div class="col-sm-4"> 
-      <img src="images/CSS3_and_HTML5_logos_and_wordmarks.svg" class="img-responsive" style="width:100%" alt="Image">
-      <p>Making sure it's easy and simple to navigate on website</p>    
+      <img src="images/CSS.png" class="img-responsive" style="margin: auto" alt="Image">
+      <p>Custom fonts and animation elements makes your website looks more attractive and interesting</p>    
     </div>
+    <div class="col-sm-4"> 
+      <img src="images/JS.png" class="img-responsive" style="margin: auto" alt="Image">
+      <p>Building Reusable JavaScript components to integrate function into your website</p>    
+    </div>
+  </div>
+  <div class="row">
     <div class="col-sm-4">
       <div class="well">
        <p>Connect me on <i class="fa fa-linkedin" aria-hidden="true"><a href="https://www.linkedin.com/in/lukasrimkus/" >LinkedIn</a></i></p>
@@ -129,6 +146,7 @@
       </div>
     </div>
   </div>
+  
 </div><br>
 
 <footer class="container-fluid text-center">
